@@ -1,0 +1,46 @@
+Processor (CPU)
+CPU Name	Intel® Core™ i5-8600K CPU @ 3.60GHz
+Threading	1 CPU - 4 Core - 4 Threads
+Frequency	4189.75 MHz (42 * 99.76 MHz) - Uncore: 3890.5 MHz
+Multiplier	Current: 42 / Min: 8 / Max: 43
+Architecture	Coffee Lake / Stepping: U0 / Technology: 14 nm
+CPUID / Ext.	6.E.A / 6.9E
+IA Extensions	MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, EM64T, VT-x, AES, AVX, AVX2, FMA3, TSX
+Caches	L1D : 32 KB / L2 : 256 KB / L3 : 9216 KB
+Caches Assoc.	L1D : 8-way / L2 : 4-way / L3 : 12-way
+Microcode	Rev. 0xB4   > Intel SA-00233 Patched <
+TDP / Vcore	95 Watts / 0.656 Volts
+Temperature	55 °C / 131 °F
+Type	Retail (Stock Frequency : 3600 MHz)
+Cores Frequencies	#00: 4189.75 MHz  #01: 4189.75 MHz  #02: 4189.75 MHz  #03: 4189.75 MHz 
+
+Motherboard
+Model	ASRock B360M/OEM
+Socket	Socket 1151 LGA
+North Bridge	Intel Coffee Lake rev 07
+South Bridge	Intel B360 rev 10
+BIOS	American Megatrends Inc. L0.01 (07/17/2019)
+
+Memory (RAM)
+Total Size	49152 MB
+Type	Dual Channel (128 bit) DDR4-SDRAM
+Frequency	1330.1 MHz (DDR4-2660) - Ratio 3:40
+Timings	19-19-19-43-2 (tCAS-tRCD-tRP-tRAS-tCR)
+Slot #1 Module	G.Skill 16384 MB (DDR4-2666) - P/N: F4-2666C19-16GIS
+Slot #2 Module	SK Hynix 8192 MB (DDR4-2666) - P/N: HMA81GS6CJR8N-VK
+Slot #3 Module	G.Skill 16384 MB (DDR4-2666) - P/N: F4-2666C19-16GIS
+Slot #4 Module	SK Hynix 8192 MB (DDR4-2666) - P/N: HMA81GS6CJR8N-VK
+
+Graphic Card (GPU)
+GPU #1 Type	NVIDIA GeForce RTX 2080 Ti (TU102-300A) @ 1650 MHz
+GPU #1 Brand	Gainward
+GPU #1 Specs	TU102-300 / Process: 12nm / Transistors: 18.6B / Die Size: 754 mm2 / TDP: 250W
+GPU #1 Units	Shader Units: 4352 / Texture Units (TMU): 272 / Render Units (ROP): 88
+GPU #1 VRAM	11264 MB GDDR6 / 352-bit Bus @ 7000 MHz
+GPU #1 APIs	DirectX 12.0 (12_1) / OpenGL 4.6 / OpenCL 1.2 / Vulkan 1.1
+GPU #2 Type	Microsoft Remote Display Adapter
+
+Storage (HDD/SSD)
+Model #1 Name	SSDPR-PX500-512-80-G2 (FW: EHFMC0.0)
+Model #1 Capacity	476.9 GiB (~510 GB)
+Model #1 Type	Fixed, SSD - Bus: NVMe (17)

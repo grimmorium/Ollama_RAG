@@ -1,0 +1,1 @@
+streamlit run documentsSearch.py

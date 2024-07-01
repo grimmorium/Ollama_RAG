@@ -10,7 +10,7 @@ how to install:
 
 how to run:
 !! information !!
-	I. during the first attemts of running, the script will first indicate that there are missing packeges not installed in the system, install tchem using pip (it may be helpfull to use flag "--only-binary :all:" when using pip)
+	I. during the first attemts of running, the script will first indicate that there are missing packeges not installed in the system, install them using pip (it may be helpfull to use flag "--only-binary :all:" when using pip and/or indicate specyfic versions)
 	II. when all needed paskages are installed then the script will download the missing LLAMA3 LLM files (aprox 4,7 GB).
 
 1. run the command line

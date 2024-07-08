@@ -22,6 +22,7 @@ how to install:
 	- pip install pypdf
 	- pip install fastembed
 	- pip install chromadb
+	- pip install python-certifi-win32
 7. download files: chatbot.py, documentsSearch.py, rag.py, run_chat.bat, run_doc.bat and store them in one folder
 8. test if ollama works and if it is capable of running the model:
 	a. in windows command line run command "ollama run dolphin-llama3:8b"

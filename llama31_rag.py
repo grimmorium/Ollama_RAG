@@ -15,30 +15,12 @@ class ChatPDF:
     chain = None
 
     def __init__(self):
-        self.model = ChatOllama(model="llama3.1:latest",temperature=0,)
+        self.model = ChatOllama(model="llama3.1:8b",temperature=0,)
 
-        self.text_splitter = RecursiveCharacterTextSplitter(chunk_size=250, chunk_overlap=0)
-        #self.prompt = PromptTemplate.from_template(
-        #    """
-        #    <s> [INST] This is a chat between a user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user’s questions based on the context. The assistant should also indicate when the answer cannot be found in the context. [/INST] </s> 
-        #    [INST] Question: {question} 
-        #    Context: {context} 
-        #    Answer: [/INST]
-        #    """
-        #)
-        '''
-        self.prompt = PromptTemplate.from_template(
-            """
-            {{ if .System }}System: {{ .System }}
-
-            {{ end }}{{ if .Prompt }}User: {{ .Prompt }}
-
-            {{ end }}Assistant: <|begin_of_text|>{{ .Response }}
-            """
-        )
-        '''
+        self.text_splitter = RecursiveCharacterTextSplitter(chunk_size=2000, chunk_overlap=250)
+        
         self.prompt = PromptTemplate(
-            template="""You are an assistant for question-answering tasks. 
+            template="""You are an assistant in multifunctional tasks related to text analysis. 
             
             Use the context below to answer the question.
             
@@ -61,17 +43,7 @@ class ChatPDF:
         chunks = filter_complex_metadata(chunks)
 
         vector_store = Chroma.from_documents(documents=chunks, embedding=FastEmbedEmbeddings())
-        #vector_store = Chroma.from_documents(documents=chunks, embedding=OpenAIEmbeddings())
-        
-        '''
-        self.retriever = vector_store.as_retriever(
-            search_type="similarity_score_threshold",
-            search_kwargs={
-                "k": 3,
-                "score_threshold": 0.5,
-            },
-        )
-        '''
+
         self.retriever = vector_store.as_retriever(k=4)
 
         self.chain = ({"context": self.retriever, "question": RunnablePassthrough()}

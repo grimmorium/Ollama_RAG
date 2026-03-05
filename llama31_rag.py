@@ -15,7 +15,7 @@ class ChatPDF:
     chain = None
 
     def __init__(self):
-        self.model = ChatOllama(model="llama3.1:8b",temperature=0,)
+        self.model = ChatOllama(model="llama3.3:70b-instruct-q2_K",temperature=0,)
 
         self.text_splitter = RecursiveCharacterTextSplitter(chunk_size=2000, chunk_overlap=250)
         

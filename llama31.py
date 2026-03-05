@@ -33,12 +33,12 @@ prompt = PromptTemplate(
 )
 
 # Set up the Streamlit framework
-st.title('Langchain Chatbot With llama3.1:8b model')  # Set the title of the Streamlit app
+st.title('Langchain Chatbot With llama3.3:70b-instruct-q2_K model')  # Set the title of the Streamlit app
 input_text=st.text_input("Ask your question!")  # Create a text input field in the Streamlit app
 
 # Initialize the Ollama model
 llm = ChatOllama(
-    model="llama3.1:latest",
+    model="llama3.3:70b-instruct-q2_K",
     temperature=0,
 )
 
